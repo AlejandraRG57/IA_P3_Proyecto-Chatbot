@@ -3,11 +3,11 @@ _Seguimos el tutorioal de Sentdex para crear un chatbot con Python y TensorFlow.
 _Tutorial Usado: https://pythonprogramming.net/chatbot-deep-learning-python-tensorflow/?authuser=0#google_vignette_
 
 ## 1. Preparación de la Información
-###Informacion
+### Informacion
 _Use la informacion proporcionada de reddit para crear la database que uso mi chatbot._
 _https://www.reddit.com/r/datasets/comments/3bxlg7/i_have_every_publicly_available_reddit_comment/?st=j9udbxta&sh=69e4fee7_
 _En especifico los siguientes meses en diversas pruebas: '2015-05' , '2007-12', 2012-12, '2010-11'._
-###Codigos para preparar la info
+### Codigos para preparar la info
 _Primero se corre el codigo [chatbot_database.py](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/chatbot_database.py) para preparar cada mes individualmente y hacerlo formato Data Base File, se va modificando la variable timeframe (linea 6) por cada mes, tabmbién se tiene que modificar la linea 96 para que de a la carpeta de nuestra info la tienen que tener de la siguiente forma:_
 ```
 #Ejemplo(Asi lo puse yo)
@@ -31,7 +31,7 @@ timeframes = ['2015-05','2010-11','2007-12','2012-12'] #Estos son los que yo use
 _Se nos van a generar 4 archivos, mas adelante vamos a usar el "train.to" y el "train.from"._
 ## 2. Creamos nuestro enviroment
 Yo ultilice el Anaconda Prompt para realizacion del proyecto. Lo realice en un Enviroment ya que para varias instalaciones se necesitan en versiones especificas y podrian haber problemas de compatibilidad.
-###Comandos
+### Comandos
 _Corremos el siguiente comando para crear el enviroment:_
 ```
 conda create -n Chatbot python=3.6 
@@ -43,7 +43,7 @@ conda activate Chatbot
 ## 3. Preparamos nuestro enviroment
 Primero con el anaconda prompt nos vamos a donde queremos que se guarde el repositorio que vamos a clonar.
 _Yo cree una carpeta en midisco local F: llamada nmt-chatbot-master._
-###Moverse en el Anaconda Prompt
+### Moverse en el Anaconda Prompt
 Nos vamos a mover a ciertas carpetas dentro del mismo prompt.
 _Por ejemplo asi es como yo me movi a la carpeta donde queria que se guardara el repositorio._
 ```
@@ -51,7 +51,7 @@ _Por ejemplo asi es como yo me movi a la carpeta donde queria que se guardara el
 F: #Primero me movi al disco F: ya que por default estaba en el C:
 cd F:\nmt-chatbot-master #Despues me movi a la dirección de la carpeta que queria
 ```
-###Clonar el repositorio
+### Clonar el repositorio
 Estos son los comandos que vas a necesitar correr.
 _Primero instalamos git en el repositorio (es una libreria necesaria)._
 ```
@@ -61,7 +61,7 @@ _Procedemos a clonar el repositorio._
 ```
 git clone --recursive https://github.com/daniel-kukiela/nmt-chatbot
 ```
-###Instalar requerimientos
+### Instalar requerimientos
 _Una vez que clonamos el repositorio nos movemos dentro de la carpeta que se creo._
 ```
 cd nmt-chatbot
@@ -72,10 +72,10 @@ pip install -r requirements.txt
 ```
 
 ## 4. Configuración del proyecto antes de entrenar
-###Colocacion de archivos.
+### Colocacion de archivos.
 _Primero vamos a poner los archivos generados "train.to" y "train.from" en la carpeta "new_data"._
 
-###Procesando la información.
+### Procesando la información.
 _En este momento recomiendo entrar a la carpeta setup e ir al codigo "settings"_
 Esto es lo que yo modifique pero dependera de la capacidad de su computadora y lo que quieran hacer lo que ustedes harán:
 ```
@@ -99,7 +99,7 @@ _Ya que tenemos todo preparado corremos el siguiente comando para empezar el ent
 ```
 python train.py
 ```
-###Contexto de lo que se imprime en el anaconda mientras se entrena
+### Contexto de lo que se imprime en el anaconda mientras se entrena
 _Es bueno el ir supervisando el entrenamiento, cada 1000 steps nos mostrara un ejemplo de como se comporta nuestro chatbot, podemos ver si va progresando o si en entrenamiento no fue el mejor._
 ```
 step: El número de pasos de entrenamiento completados.
@@ -110,7 +110,7 @@ ppl (perplexity): Una medida de cuán bien el modelo predice una muestra. Valore
 gN (gradient norm): La norma del gradiente. Valores muy altos pueden indicar que el modelo está experimentando gradientes explosivos.
 bleu: La puntuación BLEU, que mide la precisión de la traducción. Una puntuación de 0.00 significa que las traducciones generadas por el modelo no coinciden bien con las referencias.
 ```
-###Tensorflow
+### Tensorflow
 _Mientras se esta entrenando podemos abrir otro anaconda prompt, activar nuestro enviroment, irnos a la carpeta del repositorio y correr el siguiente codigo para poder visualizar las estadisticas de nuestro entrenamiento._
 ```
 tensorboard --logdir=train_log/
@@ -134,6 +134,6 @@ Para poder correr un chatbot en especifico, si lo quisieramos mover de computado
 ***2. [translate.ckpt-11000.index](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/translate.ckpt-11000.index)
 ***3. [translate.ckpt-11000.meta](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/translate.ckpt-11000.meta)
 
-##Agradecimientos
+## Agradecimientos
 _Gracias por leer!_
 Tambien muchas gracias a Sentdex y Daniel-kukiela por este gran tutorial!
