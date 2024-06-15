@@ -126,13 +126,13 @@ _Ya cada quien puede ir probando y modificando cosas a su gusto._
 Para poder correr un chatbot en especifico, si lo quisieramos mover de computadora o compartir, los archivos que necesitas son:
 * El repositorio nmt
 * De la carpeta model que se creo:
-** [checkpoint](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/checkpoint) #Modificarlo para el step de los 3 archivos que decidimos usar mas adelante (Ej: 11000)
-** [hparams](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/hparams)
-** Los tres archivos que correspondan al step en el que iba tu chatbot que quieras usar.
-***Ejemplo:
-***1. [translate.ckpt-11000.data-00000-of-00001]()  #No subido porque pesaba mucho
-***2. [translate.ckpt-11000.index](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/translate.ckpt-11000.index)
-***3. [translate.ckpt-11000.meta](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/translate.ckpt-11000.meta)
+  - [checkpoint](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/checkpoint) #Modificarlo para el step de los 3 archivos que decidimos usar mas adelante (Ej: 11000)
+  - [hparams](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/hparams)
+  - Los tres archivos que correspondan al step en el que iba tu chatbot que quieras usar.
+    Ejemplo:
+      1. [translate.ckpt-11000.data-00000-of-00001]()  #No subido porque pesaba mucho
+      2. [translate.ckpt-11000.index](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/translate.ckpt-11000.index)
+      3. [translate.ckpt-11000.meta](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/translate.ckpt-11000.meta)
 
 ## Agradecimientos
 _Gracias por leer!_
