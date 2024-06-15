@@ -23,7 +23,7 @@ _Primero se corre el codigo [chatbot_database.py](https://github.com/AlejandraRG
 #Linea 6
 timeframe = '2010-11' #Meses usados: '2015-05' , '2007-12', 2012-12, '2010-11'
 ```
-# Una vez finalizado el otro, corremos el codigo [create_training_data.py](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/create_training_data.py) en el cual al inicio en "timeframes" escibimos todos los meses que querramos usar, los archivos que nos genero el codigo [chatbot_database.py](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/chatbot_database.py) deben de estar en la misma carpeta que este nuevo codigo.
+_Una vez finalizado el otro, corremos el codigo [create_training_data.py](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/create_training_data.py) en el cual al inicio en "timeframes" escibimos todos los meses que querramos usar, los archivos que nos genero el codigo [chatbot_database.py](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/chatbot_database.py) deben de estar en la misma carpeta que este nuevo codigo._
 ```
 timeframes = ['2015-05','2010-11','2007-12','2012-12'] #Estos son los que yo use en uno de mis entrenamientos.
 ```
