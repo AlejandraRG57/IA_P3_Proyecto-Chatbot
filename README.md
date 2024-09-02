@@ -133,7 +133,10 @@ Para poder correr un chatbot en especifico, si lo quisieramos mover de computado
       1. [translate.ckpt-11000.data-00000-of-00001]()  #No subido porque pesaba mucho
       2. [translate.ckpt-11000.index](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/translate.ckpt-11000.index)
       3. [translate.ckpt-11000.meta](https://github.com/AlejandraRG57/IA_P3_Proyecto-Chatbot/blob/main/translate.ckpt-11000.meta)
+   
+## Expresiones de Gratitud 🎁
+* Gracias a el profesor Mauricio Alejandro Cabrera Arellano por siempre impulsarnos a aprender cosas nuevas.
+* Tambien muchas gracias a Sentdex y Daniel-kukiela por este gran tutorial!
 
-## Agradecimientos
-_Gracias por leer!_
-Tambien muchas gracias a Sentdex y Daniel-kukiela por este gran tutorial!
+## Estatus ⚙️
+_Terminado_
